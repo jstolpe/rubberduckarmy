@@ -1,10 +1,4 @@
-# iarecoding
-
-a simple PHP MVC framework.
-
-Learn to code this MVC (Model-View-Controller) framework from scratch! The YouTube link below will walk you through the process of coding the iarecoding framework so you learn and have a better understanding of how frameworks work :D
-
-YouTube -> https://www.youtube.com/justinstolpe
+# rubberduckarmy
 
 ==========================================================================
     
