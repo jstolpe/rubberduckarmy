@@ -1,6 +1,16 @@
 <?php
-	// require global includes and creds that should NOT BE IN the repo
-	require_once '../../includes/rubberduckarmy_global_include.php';
+	if ( 'rubberduckarmy.com' == $_SERVER['HTTP_HOST'] ) { // we are on our server
+		if ( str_contains( $_SERVER['PHP_SELF'], '/dev/' ) ) { // dev server
+			// require global includes and creds that should NOT BE IN the repo
+			require_once __DIR__ . '/../../../../includes/rubberduckarmy_global_include_dev.php';
+		} else {
+			// require global includes and creds that should NOT BE IN the repo
+			require_once __DIR__ . '/../../../includes/rubberduckarmy_global_include_dev.php';
+		}
+	} else { // localhost
+		// require global includes and creds that should NOT BE IN the repo
+		require_once __DIR__ . '/../../includes/rubberduckarmy_global_include.php';
+	}
 
 	if ( ENVIRONMENT == 'development' ) { // development env specific things
 		// display all errors
