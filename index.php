@@ -5,7 +5,7 @@
 			require_once __DIR__ . '/../../../../includes/rubberduckarmy_global_include_dev.php';
 		} else {
 			// require global includes and creds that should NOT BE IN the repo
-			require_once __DIR__ . '/../../../includes/rubberduckarmy_global_include_dev.php';
+			require_once __DIR__ . '/../../../includes/rubberduckarmy_global_include_prod.php';
 		}
 	} else { // localhost
 		// require global includes and creds that should NOT BE IN the repo

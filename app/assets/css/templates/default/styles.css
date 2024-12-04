@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Parkinsans-Bold';
+	src: url( '../../../fonts/parkinsans/Parkinsans-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Parkinsans-ExtraBold';
+	src: url( '../../../fonts/parkinsans/Parkinsans-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: 'Parkinsans-Light';
+	src: url( '../../../fonts/parkinsans/Parkinsans-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Parkinsans-Medium';
+	src: url( '../../../fonts/parkinsans/Parkinsans-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Parkinsans-Regular';
+	src: url( '../../../fonts/parkinsans/Parkinsans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Parkinsans-SemiBold';
+	src: url( '../../../fonts/parkinsans/Parkinsans-SemiBold.ttf');
+}
+
+body {
+	font-family: 'Parkinsans-Light';
+	padding: 0;
+	margin: 0;
+	background: #f0f2f5;
+}
+
+.body-container {
+	margin-top: 73px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+.header-container {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #ffffff;
+	box-shadow: 0 0px 0px rgba( 47, 225, 225, .3 ), 0 4px 10px rgba( 47, 225, 225, .3 );
+}
+
+.header-container-pad {
+	padding: 10px;
+	user-select: none;
+}
+
+.header-container-flex {
+	display: flex;
+}
+
+.header-flex-left {
+	flex: 1;
+	font-family: 'Parkinsans-Bold';
+}
+
+.header-flex-right {
+	flex: 1;
+	text-align: right;
+}
+
+.header-logo {
+	color: #000000;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.header-logo img {
+	height: 32px;
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+
+.user-menu-icon {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.content-container {
+	background: #ffffff;
+	box-shadow: 0 0px 0px rgba( 47, 225, 225, .3 ), 0 4px 10px rgba( 47, 225, 225, .3 );
+	border-radius: 5px;
+}
+
+.content-container-pad {
+	padding: 20px;
+}
+
+@media only screen and ( max-width: 1200px ) { /* mobile */
+	.body-container {
+		margin-top: 59px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	.header-site-display-name {
+		display: none;
+	}
+
+	.user-menu-icon {
+		font-size: 26px;
+	}
+
+	.header-logo img {
+		height: 28px;
+	}
+}
