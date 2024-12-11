@@ -23,6 +23,13 @@
 		<!-- template specific js -->
 		<script src="<?php echo BASE_URL_ASSETS; ?>js/templates/default/script.js"></script>
 
+		<script>
+			document.addEventListener( 'DOMContentLoaded', function() { // document ready
+				// initialize RDA
+				rubberDuckArmy.initialize();
+			} );
+		</script>
+
 		<!-- page specific html head -->
 		<?php echo $html_head; ?>
 	</head>
@@ -42,11 +49,64 @@
 						<span class="fa-solid fa-bars user-menu-icon">
 
 						</span>
+
+						<div class="user-menu-container hide">
+							<div class="user-menu-container-inner">
+								<div class="user-menu">
+									<a href="<?php echo HREF_BASE_URL; ?>">
+										<div class="user-menu-item top">
+											<div class="user-item">
+												<div>
+													Home
+												</div>
+												<div class="user-item-icon">
+													<span class="fa-solid fa-home">
+
+													</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="<?php echo HREF_BASE_URL; ?>login">
+										<div class="user-menu-item">
+											<div class="user-item">
+												<div>
+													Log In
+												</div>
+												<div class="user-item-icon">
+													<span class="fa-solid fa-right-to-bracket">
+
+													</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="<?php echo HREF_BASE_URL; ?>signup">
+										<div class="user-menu-item bottom">
+											<div class="user-item">
+												<div>
+													Sign Up
+												</div>
+												<div class="user-item-icon">
+													<span class="fa-solid fa-user-plus">
+
+													</span>
+												</div>
+											</div>
+										</div>
+									</a>	
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
+			<!-- global overlay -->
+			<div class="global-overlay-takover">
+
+			</div>
+		</div>
 
 		<!-- body specific html -->
 		<div class="body-container">

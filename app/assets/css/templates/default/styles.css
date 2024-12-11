@@ -30,11 +30,82 @@
 	src: url( '../../../fonts/parkinsans/Parkinsans-SemiBold.ttf');
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	font-family: 'Parkinsans-Light';
 	padding: 0;
 	margin: 0;
 	background: #f0f2f5;
+}
+
+.global-overlay-takover {
+	background: rgba( 0, 0, 0, 0.9 );
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	display: none;
+}
+
+.user-menu-container {
+	position: relative;
+	z-index: 2;
+	margin-top: 5px;
+}
+
+.user-menu-container.hide {
+	display: none;
+}
+
+.user-menu-container-inner {
+	position: absolute;
+	background: #ffffff;
+	width: 200px;
+	right: 0;
+	border-radius: 5px;
+}
+
+.user-menu {
+	font-size: 16px;
+	box-shadow: 0 0px 0px rgba( 225, 225, 225, .3 ), 0 4px 10px rgba( 225, 225, 225, .3 );
+}
+
+.user-menu-item {
+	padding: 10px;
+  	border-bottom: 1px solid #e3e3e3;
+  	cursor: pointer;
+  	font-family: 'Parkinsans-Bold';
+}
+
+.user-menu-item:hover {
+	background: #ffff00;
+}
+
+.user-menu-item.top {
+	border-top-right-radius: 5px;
+  	border-top-left-radius: 5px;
+}
+
+.user-menu-item.bottom {
+	border-bottom-right-radius: 5px;
+  	border-bottom-left-radius: 5px;
+}
+
+.user-menu-item.bottom {
+	border-bottom: 0px;
+}
+
+.user-item {
+	display: flex;
+	color: #000;
+}
+
+.user-item-icon {
+	flex: 1;
 }
 
 .body-container {
@@ -87,6 +158,8 @@ body {
 .user-menu-icon {
 	font-size: 30px;
 	cursor: pointer;
+	position: relative;
+	z-index: 2;
 }
 
 .content-container {
